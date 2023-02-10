@@ -5,9 +5,9 @@
     "main": "src/index.js",
     "scripts": {
         "pre-copy": "cd .. && yarn run copy.lib base-baileys-mongo",
-        "start": "node app.js",
+        "start": "node src/index.js",
         "lint": "eslint .",
-        "lint:fix": "eslint . --fix" 
+        "lint:fix": "eslint . --fix"
     },
     "keywords": [],
     "dependencies": {
