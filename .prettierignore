@@ -1,0 +1,6 @@
+bot_sessions/
+node_modules/
+
+bileys.log
+core.class.log
+package-lock.json
