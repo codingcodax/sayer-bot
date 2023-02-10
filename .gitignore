@@ -3,5 +3,7 @@ node_modules/
 .env
 
 baileys.log
+bot.qr.png
 core.class.log
+db.json
 package-lock.json
