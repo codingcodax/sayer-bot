@@ -5,7 +5,9 @@
     "main": "src/index.js",
     "scripts": {
         "pre-copy": "cd .. && yarn run copy.lib base-baileys-mongo",
-        "start": "node app.js"
+        "start": "node app.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix" 
     },
     "keywords": [],
     "dependencies": {
@@ -24,6 +26,7 @@
     "devDependencies": {
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
         "prettier": "^2.8.4"
     }
 }
