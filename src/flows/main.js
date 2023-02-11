@@ -1,6 +1,6 @@
 const { addKeyword, addAnswer } = require('@bot-whatsapp/bot');
 
-const main = addKeyword(['hola', 'ole', 'alo', 'ola', 'menu'])
+const main = addKeyword(['hola', 'ole', 'alo', 'ola', 'menu', 'menú'])
   .addAnswer([
     '¡Hola! 👋 Soy un bot 🤖 de *Sayer - La Vía*',
     'Gracias por contactarnos.',
