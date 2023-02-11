@@ -6,10 +6,9 @@ const address = addKeyword([
   'direccion',
   'dirección',
   'cual es tu dirección',
-]).addAnswer([
-  'Nuestra direccion es la siguiente',
-  '',
-  'https://g.page/Sayer-La-Via',
-]);
+]).addAnswer(
+  ['Nuestra direccion es la siguiente', '', 'https://g.page/Sayer-La-Via'],
+  { buttons: [{ body: 'Menú' }, { body: 'Terminar' }] }
+);
 
 module.exports = address;
