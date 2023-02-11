@@ -1,6 +1,8 @@
 const { addKeyword, addAnswer } = require('@bot-whatsapp/bot');
 
 const address = addKeyword([
+  '2',
+  '2.',
   'direccion',
   'dirección',
   'cual es tu dirección',
