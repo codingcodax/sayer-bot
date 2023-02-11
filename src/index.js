@@ -7,10 +7,16 @@ const addressFlow = require('./flows/address');
 const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const JsonAdapter = require('@bot-whatsapp/database/json');
+const paymentMethodsFlow = require('./flows/paymentMethods');
 
 const main = async () => {
   const adapterDB = new JsonAdapter();
-  const adapterFlow = createFlow([mainFlow, schedulesFlow, addressFlow]);
+  const adapterFlow = createFlow([
+    mainFlow,
+    schedulesFlow,
+    addressFlow,
+    paymentMethodsFlow,
+  ]);
   const adapterProvider = createProvider(BaileysProvider);
   createBot({
     flow: adapterFlow,
