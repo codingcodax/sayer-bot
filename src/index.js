@@ -1,26 +1,14 @@
 const { createBot, createProvider, createFlow } = require('@bot-whatsapp/bot');
 
-const mainFlow = require('./flows/main');
-const schedulesFlow = require('./flows/schedules');
-const addressFlow = require('./flows/address');
-
 const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const JsonAdapter = require('@bot-whatsapp/database/json');
-const paymentMethodsFlow = require('./flows/paymentMethods');
-const payFlow = require('./flows/pay');
-const finishFlow = require('./flows/finish');
+
+const mainFlow = require('./flows/main');
 
 const main = async () => {
   const adapterDB = new JsonAdapter();
-  const adapterFlow = createFlow([
-    mainFlow,
-    schedulesFlow,
-    addressFlow,
-    paymentMethodsFlow,
-    payFlow,
-    finishFlow,
-  ]);
+  const adapterFlow = createFlow([mainFlow]);
   const adapterProvider = createProvider(BaileysProvider);
   createBot({
     flow: adapterFlow,
