@@ -13,6 +13,7 @@ const main = addKeyword(['hola', 'ole', 'alo', 'ola', 'menu', 'menú'])
     '*1.* Horarios',
     '*2.* Donde nos ubicamos',
     '*3.* Métodos de pago',
+    '*4.* Pagar',
     // '4. Consultar un precio',
     // '5. Info acerca de algun producto',
   ]);
