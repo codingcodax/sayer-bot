@@ -8,6 +8,7 @@ const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const JsonAdapter = require('@bot-whatsapp/database/json');
 const paymentMethodsFlow = require('./flows/paymentMethods');
+const payFlow = require('./flows/pay');
 const finishFlow = require('./flows/finish');
 
 const main = async () => {
@@ -17,6 +18,7 @@ const main = async () => {
     schedulesFlow,
     addressFlow,
     paymentMethodsFlow,
+    payFlow,
     finishFlow,
   ]);
   const adapterProvider = createProvider(BaileysProvider);
