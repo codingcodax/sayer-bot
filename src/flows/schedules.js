@@ -2,7 +2,7 @@ const { addKeyword, addAnswer } = require('@bot-whatsapp/bot');
 
 const finishFlow = require('./finish');
 
-const schedules = addKeyword(['1', '1.', 'horarios', 'horario']).addAnswer(
+const schedules = addKeyword('1').addAnswer(
   [
     'Nuestro horario es el siguiente:',
     '',

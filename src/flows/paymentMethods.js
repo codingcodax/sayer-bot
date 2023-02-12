@@ -2,7 +2,7 @@ const { addKeyword, addAnswer } = require('@bot-whatsapp/bot');
 
 const finishFlow = require('./finish');
 
-const paymentMethods = addKeyword(['3', '3.', 'métodos de pago']).addAnswer(
+const paymentMethods = addKeyword('3').addAnswer(
   [
     'Aceptamos:',
     '',
