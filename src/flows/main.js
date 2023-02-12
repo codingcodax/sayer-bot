@@ -4,6 +4,7 @@ const schedulesFlow = require('./schedules');
 const addressFlow = require('./address');
 const paymentMethodsFlow = require('./paymentMethods');
 const payFlow = require('./pay');
+const getInfoFlow = require('./getInfo');
 
 const main = addKeyword(['bot'])
   .addAnswer([
@@ -20,12 +21,13 @@ const main = addKeyword(['bot'])
       '*2.* Donde nos ubicamos',
       '*3.* Métodos de pago',
       '*4.* Pagar',
+      '*5.* Obtener Info',
       // '4. Consultar un precio',
       // '5. Info acerca de algun producto',
     ],
     null,
     null,
-    [schedulesFlow, addressFlow, paymentMethodsFlow, payFlow]
+    [schedulesFlow, addressFlow, paymentMethodsFlow, payFlow, getInfoFlow]
   );
 
 module.exports = main;
